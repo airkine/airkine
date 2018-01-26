@@ -49,6 +49,6 @@
 #>
 
 
-    Set-AzureRmVMCustomScriptExtension -ResourceGroupName $RG -Verbose -VMName $VMname -Location $Location -FileUri $URI -Run $Script -Name $Script -TypeHandlerVersion '1.9'
+    Set-AzureRmVMCustomScriptExtension -ResourceGroupName $RG -VMName $VMname -Location $Location -FileUri $URI -Run $Script -Name $Script -TypeHandlerVersion '1.9' -Verbose
 
     
